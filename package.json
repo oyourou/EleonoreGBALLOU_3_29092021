@@ -1,0 +1,14 @@
+{
+  "name": "oh-my-food",
+  "version": "1.0.0",
+  "description": "premier projet sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/style.scss public/css/style.css"
+  },
+  "author": "Eléonore Gballou",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.44.0"
+  }
+}
