@@ -1,0 +1,49 @@
+.location{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #eee;
+    
+    i {
+    
+        font-size: 20px;
+    }
+    
+    &_heading {
+    
+        margin-left: 20px;
+        font-weight: 700;
+        
+    
+    
+    }
+}
+
+.explorer {
+
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #f4f4f4a1;
+    
+    &_heading {
+        
+        margin: 0;
+        font-size: 20px;
+    
+    }
+    
+    &_discover {
+        
+        margin-top: 10px;
+        
+        font-size: 17px;
+    
+    }
+    
+    
+
+}
+
