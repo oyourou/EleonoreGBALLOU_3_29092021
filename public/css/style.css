@@ -232,6 +232,7 @@ body {
   color: black;
 }
 .card_dish {
+  width: 100%;
   box-shadow: none;
   border-radius: 15px;
   background-color: white;
@@ -352,13 +353,22 @@ body {
   -webkit-background-clip: text;
 }
 
+.food_container {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 992px) {
   .food_container {
-    width: 40%;
-    margin: 0 auto;
+    flex-direction: row;
+    gap: 30px;
   }
 }
 
+@media screen and (min-width: 992px) {
+  .food_proposition {
+    width: 30%;
+  }
+}
 .food_proposition_title {
   text-transform: uppercase;
   border-bottom: 5px solid #99e2d0;
@@ -370,6 +380,7 @@ body {
 
 .food_description {
   position: relative;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   border: none;
@@ -383,14 +394,18 @@ body {
   animation: slideup 1000ms backwards;
   cursor: pointer;
 }
+.food_description:hover .check-container {
+  margin-right: 0;
+  transform: rotate(180deg);
+}
 
 @keyframes slideup {
   0% {
-    transform: translatey(20px);
+    transform: translateX;
     opacity: 0%;
   }
   100% {
-    transform: translatey(0px);
+    transform: translateX;
     opacity: 100%;
   }
 }
@@ -403,6 +418,9 @@ body {
 .food_details_name {
   margin: 0;
   font-size: x-large;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .food_details_touch {
   margin-top: 10px;
@@ -426,15 +444,9 @@ body {
   border-radius: 0px 20px 20px 0;
   background-color: #99e2d0;
   margin-right: -94px;
-  transition: margin-right 2s ease;
-}
-.check-container:hover {
-  margin-right: 0;
-  cursor: pointer;
 }
 .check-container_validation {
   font-size: 30px;
-  transform: rotate(359deg);
 }
 
 .button {

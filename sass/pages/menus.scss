@@ -57,12 +57,18 @@
 }
 
 .food_container{
+    display: flex;
+    flex-direction: column;
     @media screen and (min-width:992px) {
-        width: 40%;
-        margin: 0 auto;
+        flex-direction: row;
+        gap: 30px;
     }
 }
+
 .food_proposition {
+    @media screen and (min-width:992px) {
+        width: 30%;
+    }
     &_title {
         text-transform: uppercase;
         border-bottom: 5px solid $color-tertiary;
@@ -74,6 +80,7 @@
 }
 .food_description {
     position: relative;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border: none;
@@ -86,16 +93,22 @@
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 20%);
     animation: slideup 1000ms backwards;
     cursor: pointer;
+    &:hover .check-container {
+        margin-right: 0;
+        transform: rotate(180deg);
+        
+        
+    }
+    
 }
 @keyframes slideup {
     0% {
-        transform: translatey(20px);
+        transform: translateX;
         opacity: 0%;
     }
     100% {
-        transform: translatey(0px);
+        transform: translateX;
         opacity: 100%;
-
     }
 }
 .food_details {
@@ -103,10 +116,12 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    
     &_name {
         margin: 0;
         font-size: x-large;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &_touch {
         margin-top: 10px;
@@ -130,14 +145,11 @@
     border-radius: 0px 20px 20px 0;
     background-color: $color-tertiary;
     margin-right: -94px;
-    transition: margin-right 2s ease;
-    &:hover {
-        margin-right: 0;
-        cursor: pointer;
-    }
     &_validation {
+        
         font-size: 30px;
-        transform: rotate(359deg);
+        
+        
     }
 }
 .button{
