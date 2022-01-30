@@ -1,12 +1,24 @@
+$color-tertiary: #99e2d0;
+
+@import "./utils/mixins";
+
+$color-primary: #9356dc;
+$gradient:linear-gradient(0deg, #9356dc, #ff79da);
+
 @import "./base/typography";
 
 @import "./layout/header";
+@import "./layout/loader";
+@import "./layout/footer";
 
-@import "./pages/home";
-@import "./pages/home";
+@import "./pages/location";
+@import "./pages/explorer";
+@import "./pages/cards";
+@import "./pages/menus.scss";
 
 @import "./components/buttons";
 
+@import "./themes/foodies";
 
 
 
@@ -22,73 +34,40 @@
 
 
 
-.function {
 
-   width: 100%;
-   
-   &_text {
 
-    text-align: center;
 
-    margin: 40px 0 30px 30px;
 
-    font-size: 20px;
 
-    } 
-    
-    
-}
 
-.block {
 
-    display: flex;
-    justify-content: space-between;
-    margin-left: 35px;
-    
-    &_details {
 
-        display: flex;
-        align-items: center;
-        position: relative;
-        width: 20rem;
-        height: 55px;
-        border: 1px none;
-        box-shadow: 0 4px 8px 2px lightgrey;
-        
-        border-radius: 14px;
-    }
-    
-    &_number {
 
-        border: 1px solid;
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        
-        left: -12px;
-        bottom: 17px;
-        text-align: center;
-        border-radius: 50%;
-        background: #9356dc;
-        color: white;
-        
-    }
-    
-    &_icon {
 
-        margin-left: 30px;
-        margin-right: 10px;
-    }
-    
-    &_item {
 
-        margin-left: 20px;
-        font-weight: bold;
-        font-size: 15px;
-    }
-    
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

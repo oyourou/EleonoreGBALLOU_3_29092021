@@ -1,0 +1,42 @@
+.footer {
+    display: block;
+    padding-left: 45px;
+    background-color: #000000c7;
+    @media screen and (min-width:992px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    &_heading {
+        font-family: 'Shrikhand';
+        color: white;
+        font-size: large;
+        font-weight: 400;
+        margin-top: 0;
+        padding-top: 30px;
+    }
+    &_app {
+        margin-top: -20px;
+        color: white;
+    }
+    &_offer {
+        display: flex;
+        align-items: baseline;
+    }
+    &_suggest {
+         margin-left: 10px;
+    }
+    &_laws {
+        margin: 0;
+    }
+    &_contact a {
+        list-style: none;
+        text-decoration: none;
+        color: inherit;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+

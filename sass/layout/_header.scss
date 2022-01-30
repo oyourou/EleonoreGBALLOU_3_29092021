@@ -1,17 +1,13 @@
 .header {
-
-    margin: 0;
-    padding: 0;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px;
+    box-shadow: 0 0 3px rgb(0,0,0,0.2);
     position: relative;
+    z-index: 1;
     
     &_logo {
+        margin: 0;
         font-family: 'Shrikhand', cursive;
         text-align: center;
-        margin: 0;
-        padding: 10px;
-
-
-    }
-        
+    } 
+    
 }

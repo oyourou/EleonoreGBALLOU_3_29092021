@@ -4,11 +4,14 @@
   "description": "premier projet sass",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass/style.scss public/css/style.css"
+    "sass": "sass --watch sass/style.scss public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed"
   },
   "author": "Eléonore Gballou",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "dependencies": {
     "sass": "^1.44.0"
   }
+  
 }
